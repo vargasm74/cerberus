@@ -6,7 +6,7 @@ FROM quay.io/centos/centos:stream9
 
 LABEL maintainer="Red Hat Chaos Engineering Team"
 
-ENV KUBECONFIG /root/.kube/config
+ENV KUBECONFIG ~/.kube/config
 
 # Copy OpenShift CLI, Kubernetes CLI from origin-tests image
 COPY --from=origintests /usr/bin/oc /usr/bin/oc
